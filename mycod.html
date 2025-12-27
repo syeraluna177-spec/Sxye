@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Room Luxyo Movers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#0f9d58;
+  --dark-green:#0a6b3b;
+  --red:#b11226;
+  --gray:#1c1c1c;
+  --light-gray:#b5b5b5;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at top, rgba(15,157,88,.2), transparent 60%),
+    linear-gradient(135deg,#0d0d0d,#1a1a1a,#101010);
+  color:white;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:rgba(0,0,0,.5);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+nav h2{
+  font-family:'Playfair Display',serif;
+  letter-spacing:2px;
+  background:linear-gradient(90deg,var(--green),#eee,var(--red));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+nav a{
+  color:#ddd;
+  text-decoration:none;
+  margin-left:30px;
+  letter-spacing:1px;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:var(--green);
+}
+
+/* ===== HOME SECTION ===== */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 40px;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.title h1{
+  font-family:'Playfair Display',serif;
+  font-size:3em;
+  letter-spacing:3px;
+}
+
+.title p{
+  color:var(--light-gray);
+  margin-top:15px;
+}
+
+/* ===== CARDS ===== */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
+}
+
+.card{
+  background:linear-gradient(160deg,#1b1b1b,#0f0f0f);
+  border-radius:25px;
+  padding:40px 30px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 0 30px rgba(15,157,88,.25),
+    inset 0 0 25px rgba(0,0,0,.7);
+  transition:.4s ease;
+}
+
+.card:hover{
+  transform:translateY(-12px) scale(1.02);
+  box-shadow:
+    0 0 45px rgba(177,18,38,.7),
+    0 0 60px rgba(15,157,88,.6);
+}
+
+.card h3{
+  font-family:'Playfair Display',serif;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+
+.card p{
+  font-size:.95em;
+  color:var(--light-gray);
+  line-height:1.8;
+  margin-bottom:30px;
+}
+
+.card a{
+  display:inline-block;
+  padding:12px 35px;
+  border-radius:50px;
+  text-decoration:none;
+  color:white;
+  letter-spacing:2px;
+  background:linear-gradient(135deg,var(--green),var(--dark-green),var(--red));
+  box-shadow:0 0 20px rgba(15,157,88,.6);
+  transition:.3s;
+}
+
+.card a:hover{
+  box-shadow:0 0 40px rgba(177,18,38,.9);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#666;
+  letter-spacing:3px;
+  font-size:.8em;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:600px){
+  nav{padding:20px 30px}
+  .title h1{font-size:2.2em}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>LUXYO MOVERS</h2>
+  <div>
+    <a href="home.html"></a>
+    <a href="data-diri.html"></a></a>
+    <a href="project.html"></a>
+    <a href="spreadsheet.html"></a>
+  </div>
+</nav>
+
+<section class="container">
+  <div class="title">
+    <h1>HOME</h1>
+    <p>Pusat navigasi eksklusif untuk informasi pribadi dan karya saya</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>DATA DIRI</h3>
+      <p>
+        Informasi lengkap tentang profil pribadi, identitas, keahlian,
+        dan deskripsi singkat yang disajikan secara profesional.
+      </p>
+      <a href="https://syeraluna177-spec.github.io/khaQua/webdatadiri.html">BUKA</a>
+    </div>
+
+    <div class="card">
+      <h3>PROJECT</h3>
+      <p>
+        Project ini merupakan animasi sederhana menggunakan HTML dan CSS. Karakter dibuat dari elemen div dan dianimasikan menggunakan keyframes seperti gerakan melompat dan berkedip untuk menghasilkan tampilan yang lucu dan interaktif.
+      </p>
+      <a href="https://syeraluna177-spec.github.io/hweo/project.html">LIHAT</a>
+    </div>
+
+    <div class="card">
+      <h3>SPREADSHEET</h3>
+      <p>
+        Akses data spreadsheet terorganisir untuk keperluan dokumentasi,
+        laporan, dan pengelolaan informasi.
+      </p>
+      <a href="https://docs.google.com/spreadsheets/d/1--8KNXpN0jSvvbJpHR-2DooR701jORXzeOQlUrH4fo8/edit?usp=drivesdk">AKSES</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 • PREMIUM • ELEGANT • EXCLUSIVE
+</footer>
+
+</body>
+</html>
